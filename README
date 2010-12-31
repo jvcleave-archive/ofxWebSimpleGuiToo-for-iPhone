@@ -36,3 +36,4 @@ TODO/WISHLIST
 - Add mouse input (TUIO?)
 - clean up code (it doesn't leak according to my testing but data could be handled more elegantly)
 - QR code generation by OF app of IP:PORT info
+-Better layout support for iPad
