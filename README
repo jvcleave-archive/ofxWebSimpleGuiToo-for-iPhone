@@ -1,3 +1,19 @@
+DEMO:
+http://www.vimeo.com/18167578
+
+Overview:
+A native iPhone application based of off Marek Bereza's (http://www.mrkbrz.com/) browser based interface to ofxSimpleGuiToo (http://memo.tv/node/875). 
+
+Using the version of ofxWebSimpleGuiToo included you can control parameters via the iPhone. The app current supports ofxSimpleGuiSliderInt, ofxSimpleGuiSliderFloat and ofxSimpleGuiToggle and ofxSimpleGuiComboBox
+
+
+Built using the latest openframeworks from github
+https://github.com/openframeworks/openFrameworks
+
+Will likely work with openFrameworks 0062 but you will have to find replace ofSetHexColor with ofSetColor
+
+FILES:
+
 ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/SimpleGuiRemote
 iPhone native app that connects to ofxWebSimpleGuiToo and generates controls using UIKit's UISlider, UISwitch and UiPicker
 
@@ -12,3 +28,11 @@ ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/PhoneGapApp/SimpleGuiApp
 requires PhoneGap (http://www.phonegap.com/)
 
 Good for testing the browser version of ofxWebSimpleGuiToo in the iPhone simulator. Also allows some special functionality that web apps only get when added to Home Screen via bookmarking
+
+
+TODO/WISHLIST
+
+- Fix Auto-Save Toggle
+- Add mouse input (TUIO?)
+- clean up code (it doesn't leak according to my testing but data could be handled more elegantly)
+- QR code generation by OF app of IP:PORT info
