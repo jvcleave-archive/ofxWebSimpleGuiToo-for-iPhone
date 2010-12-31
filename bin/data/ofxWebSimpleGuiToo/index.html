@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta name = "viewport" content = "user-scalable=no,width=device-width" />
+		<meta name="apple-mobile-web-app-capable" content="yes" >
+		<meta name="format-detection" content="telephone=no">
+
+		<script language="javascript" src="jquery-1.4.4.min.js"></script>
+		<script language="javascript" src="jquery-ui-1.8.7.custom.min.js"></script>
+		
+		
+		<script language="javascript">
+			
+			var gui;
+			var map = new Array();
+			$(document).ready(function() {
+
+				$.getJSON("/control", function(data) { 
+					gui = data;
+					loadGui();
+					addEvents();
+					setInsides();
+				});
+			});
+
+			function addEvents() {
+				for(var i = 1; i < gui.length; i++) {
+					for(var j = 0; j < gui[i].controls.length; j++) {
+						var ctrl = gui[i].controls[j];
+						$("#"+ctrl.name).click(function(e) {
+							var id = $(this).attr("id");
+							var type = $(this).attr("class");
+							if(type=="SliderFloat" || type=="SliderInt") {
+								var offset = (e.pageX - this.offsetLeft);
+								var val = offset/parseFloat($("#"+id).css("width"));
+								val = parseFloat(map[id].min) + val * (parseFloat(map[id].max)-parseFloat(map[id].min));
+								if(type=="SliderFloat") {
+									sendValue(id, val);
+								} else {
+									sendValue(id, Math.round(val));
+								}
+								
+							} else if(type=="Toggle") {
+							
+								
+								if(map[id].value=="true") {
+									sendValue(id, "false");
+								} else {
+									sendValue(id, "true");
+								}
+								sendValue(id, map[id].value);
+							} else if(type=="Button") {
+								sendValue(id, "thisStringIsIgnored");
+							}
+
+						});
+					}
+				}
+						
+			}
+			
+			function setGuiElementValue(key) {
+				if(map[key].type=="Toggle") {
+					$("#"+key).html(map[key].value=="true"?"on":"off");
+				} else if(map[key].type=="SliderFloat" || map[key].type=="SliderInt") {
+					var val = map[key].value; // this is from min to max, we want it from 0 to 200
+					
+					// first set the label
+					$("#"+key + "Value .value").html(val);
+					// then set the slider position
+					val -= parseFloat(map[key].min);
+					val /= (parseFloat(map[key].max)-parseFloat(map[key].min)); // this should be normalized
+					val *= parseFloat($("#"+key).css("width"));					
+					val += $("#"+key).offset().left;
+					$("#"+key +" .SliderHandle").css("left", val + "px");
+				}
+			}
+			
+			
+			function sendValue(key, value) {
+				map[key].value = value;
+				setGuiElementValue(key);
+				$.get("/control?key="+key+"&value="+value);
+			}
+			
+			function setInsides() {
+				for(var i = 1; i < gui.length; i++) {
+					for(var j = 0; j < gui[i].controls.length; j++) {
+						var ctrl = gui[i].controls[j];
+						if(ctrl.type=="Button") {
+							$("#"+ctrl.name).html("&nbsp;");
+						
+						}
+						
+						
+						else if(ctrl.type=="SliderFloat" || ctrl.type=="SliderInt") {
+							$("#"+ctrl.name).html('<div class="SliderHandle"></div>');
+						}
+						setGuiElementValue(ctrl.name);
+					}
+				}
+			}
+			
+			
+			
+			function loadGui() {
+				for(var i = 1; i < gui.length; i++) {
+					$("#pages").append("<li>"+makePage(gui[i])+"</li>");
+				}
+				
+			}
+
+			
+
+			
+
+			function makePage(guiPage) {
+				var s = "<h2>" +guiPage.name+ "</h2>";
+				s += "<ul>";
+				for(var i = 0; i < guiPage.controls.length; i++) {
+					s += "<li>"+makeControl(guiPage.controls[i])+"</li>";
+				}
+				s += "</ul>";
+				return s;
+			}
+			
+			function makeControl(ctrl) {
+				map[ctrl.name] = ctrl;
+				if(ctrl.type=="SliderFloat" || ctrl.type=="SliderInt") {
+				s = "<h3 id=\""+ctrl.name+"Value\">"+ctrl.name+": <span class=\"value\"></span></h3>";
+				} else {
+					s = "<h3>"+ctrl.name+"</h3>";
+				}
+				s += '<div id="'+ctrl.name+'" class="'+ctrl.type+'"></div>';
+				
+				return s;
+			}
+			
+			
+			
+			
+			
+			function get(url) {
+				$.get(url, function(data) { alert(data); });
+			}
+		</script>
+		
+		
+		<style type="text/css">
+			#container 
+			{
+				width:100%;
+				height:100%;
+			}
+			body {
+				background-color:black;
+				color:white;
+				font-family:Helvetica,arial,sans-serif;
+				padding:0;
+				margin:0;
+
+			}
+			h1 {
+				font-weight:normal;
+				font-size:1.5em;
+				color:#AA0000;
+			}
+			h2 {
+				font-weight:normal;
+				font-size:1.2em;
+				color:#AA0000;
+			}
+			
+			h3 {
+				font-weight:normal;
+				font-size:0.8em;
+				color:white;
+			}
+			
+			ul {
+				border-top:1px white solid;
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			li ul li {
+				padding-left:1em;
+			}
+			.SliderInt, .SliderFloat, .Toggle, .Button {
+				border:1px red solid;
+				height:30px;
+			}
+			
+			.Toggle, .Button {
+				width:80px;
+			}
+			.Toggle {
+				
+			}
+			
+			.SliderInt, .SliderFloat {
+				width:100%;
+			}
+			
+			.Button {
+				background-color:#550000;
+			}
+			
+			.SliderHandle {
+				height:30px;
+				position:absolute;
+				width:60px;
+				background-color:white;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<h1>ofx Control</h1>
+		<input type="range" min="0" max="50" value="25" step="5" />
+
+	<div id="container">
+		<ul id="pages"></ul>
+	</div>
+	
+	
+	</body>
+</html>

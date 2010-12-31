@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031BA5FD12C5E60100D0609C /* ControlValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BA5FA12C5E60100D0609C /* ControlValueObject.m */; };
+		031BA5FE12C5E60100D0609C /* PageValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BA5FC12C5E60100D0609C /* PageValueObject.m */; };
+		031BA60412C5E60800D0609C /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BA60112C5E60800D0609C /* SliderView.m */; };
+		031BA60512C5E60800D0609C /* ToggleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BA60312C5E60800D0609C /* ToggleView.m */; };
+		032E1C1A12C6F319009C7FF8 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032E1C1912C6F319009C7FF8 /* ComboBoxView.m */; };
+		032E1FF912C7431D009C7FF8 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032E1FF812C7431D009C7FF8 /* DataModel.m */; };
+		03435D7712C5F1CD00A51A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03435D7612C5F1CD00A51A05 /* AppDelegate.m */; };
+		035131C112C07D8C00C700A2 /* PageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035131C012C07D8C00C700A2 /* PageDetailViewController.m */; };
+		035B0D8112C99F1300FBF568 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035B0D8012C99F1300FBF568 /* QuartzCore.framework */; };
+		037F3A1512C06B9E000E0383 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A0C12C06B9E000E0383 /* NSObject+SBJSON.m */; };
+		037F3A1612C06B9E000E0383 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A0E12C06B9E000E0383 /* NSString+SBJSON.m */; };
+		037F3A1712C06B9E000E0383 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A1012C06B9E000E0383 /* SBJsonBase.m */; };
+		037F3A1812C06B9E000E0383 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A1212C06B9E000E0383 /* SBJsonParser.m */; };
+		037F3A1912C06B9E000E0383 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A1412C06B9E000E0383 /* SBJsonWriter.m */; };
+		037F3A3712C06DDD000E0383 /* OFAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037F3A3612C06DDD000E0383 /* OFAppViewController.m */; };
+		03837E4412C805B500D23358 /* ServersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03837E4312C805B500D23358 /* ServersViewController.m */; };
+		03837E5012C81D4900D23358 /* ServerConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03837E4E12C81D4900D23358 /* ServerConfigViewController.m */; };
+		03837E5112C81D4900D23358 /* ServerConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */; };
+		03B48C3C12C843B20096FACE /* ServerConfigValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B48C3B12C843B20096FACE /* ServerConfigValueObject.m */; };
+		03C9BCD212C9531700B01CDB /* OFAppDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9BCD112C9531700B01CDB /* OFAppDataModel.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		031BA5F912C5E60100D0609C /* ControlValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlValueObject.h; sourceTree = "<group>"; };
+		031BA5FA12C5E60100D0609C /* ControlValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlValueObject.m; sourceTree = "<group>"; };
+		031BA5FB12C5E60100D0609C /* PageValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageValueObject.h; sourceTree = "<group>"; };
+		031BA5FC12C5E60100D0609C /* PageValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageValueObject.m; sourceTree = "<group>"; };
+		031BA60012C5E60800D0609C /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		031BA60112C5E60800D0609C /* SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+		031BA60212C5E60800D0609C /* ToggleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleView.h; sourceTree = "<group>"; };
+		031BA60312C5E60800D0609C /* ToggleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleView.m; sourceTree = "<group>"; };
+		032E1C1812C6F319009C7FF8 /* ComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBoxView.h; sourceTree = "<group>"; };
+		032E1C1912C6F319009C7FF8 /* ComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBoxView.m; sourceTree = "<group>"; };
+		032E1FF712C7431D009C7FF8 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		032E1FF812C7431D009C7FF8 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		03435D7512C5F1CD00A51A05 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03435D7612C5F1CD00A51A05 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		035131BF12C07D8C00C700A2 /* PageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageDetailViewController.h; sourceTree = "<group>"; };
+		035131C012C07D8C00C700A2 /* PageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageDetailViewController.m; sourceTree = "<group>"; };
+		035B0D8012C99F1300FBF568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		037F3A0A12C06B9E000E0383 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		037F3A0B12C06B9E000E0383 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		037F3A0C12C06B9E000E0383 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		037F3A0D12C06B9E000E0383 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		037F3A0E12C06B9E000E0383 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		037F3A0F12C06B9E000E0383 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		037F3A1012C06B9E000E0383 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		037F3A1112C06B9E000E0383 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		037F3A1212C06B9E000E0383 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		037F3A1312C06B9E000E0383 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		037F3A1412C06B9E000E0383 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		037F3A3512C06DDD000E0383 /* OFAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFAppViewController.h; path = ../OFAppViewController.h; sourceTree = "<group>"; };
+		037F3A3612C06DDD000E0383 /* OFAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFAppViewController.m; path = ../OFAppViewController.m; sourceTree = "<group>"; };
+		03837E4212C805B500D23358 /* ServersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServersViewController.h; sourceTree = "<group>"; };
+		03837E4312C805B500D23358 /* ServersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServersViewController.m; sourceTree = "<group>"; };
+		03837E4D12C81D4900D23358 /* ServerConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfigViewController.h; sourceTree = "<group>"; };
+		03837E4E12C81D4900D23358 /* ServerConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConfigViewController.m; sourceTree = "<group>"; };
+		03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerConfigViewController.xib; sourceTree = "<group>"; };
+		03B48C3A12C843B20096FACE /* ServerConfigValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfigValueObject.h; sourceTree = "<group>"; };
+		03B48C3B12C843B20096FACE /* ServerConfigValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConfigValueObject.m; sourceTree = "<group>"; };
+		03C9BCD012C9531700B01CDB /* OFAppDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFAppDataModel.h; sourceTree = "<group>"; };
+		03C9BCD112C9531700B01CDB /* OFAppDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFAppDataModel.m; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* SimpleGuiRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGuiRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* SimpleGuiRemote_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGuiRemote_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* SimpleGuiRemote-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleGuiRemote-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				035B0D8112C99F1300FBF568 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031BA5F812C5E60100D0609C /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				031BA5F912C5E60100D0609C /* ControlValueObject.h */,
+				031BA5FA12C5E60100D0609C /* ControlValueObject.m */,
+				031BA5FB12C5E60100D0609C /* PageValueObject.h */,
+				031BA5FC12C5E60100D0609C /* PageValueObject.m */,
+				03B48C3A12C843B20096FACE /* ServerConfigValueObject.h */,
+				03B48C3B12C843B20096FACE /* ServerConfigValueObject.m */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		031BA5FF12C5E60800D0609C /* ControlViews */ = {
+			isa = PBXGroup;
+			children = (
+				031BA60012C5E60800D0609C /* SliderView.h */,
+				031BA60112C5E60800D0609C /* SliderView.m */,
+				031BA60212C5E60800D0609C /* ToggleView.h */,
+				031BA60312C5E60800D0609C /* ToggleView.m */,
+				032E1C1812C6F319009C7FF8 /* ComboBoxView.h */,
+				032E1C1912C6F319009C7FF8 /* ComboBoxView.m */,
+			);
+			path = ControlViews;
+			sourceTree = "<group>";
+		};
+		037F3A0912C06B9E000E0383 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				037F3A0A12C06B9E000E0383 /* JSON.h */,
+				037F3A0B12C06B9E000E0383 /* NSObject+SBJSON.h */,
+				037F3A0C12C06B9E000E0383 /* NSObject+SBJSON.m */,
+				037F3A0D12C06B9E000E0383 /* NSString+SBJSON.h */,
+				037F3A0E12C06B9E000E0383 /* NSString+SBJSON.m */,
+				037F3A0F12C06B9E000E0383 /* SBJsonBase.h */,
+				037F3A1012C06B9E000E0383 /* SBJsonBase.m */,
+				037F3A1112C06B9E000E0383 /* SBJsonParser.h */,
+				037F3A1212C06B9E000E0383 /* SBJsonParser.m */,
+				037F3A1312C06B9E000E0383 /* SBJsonWriter.h */,
+				037F3A1412C06B9E000E0383 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = Classes/JSON;
+			sourceTree = "<group>";
+		};
+		03C9BD1F12C980C000B01CDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03C9BCD012C9531700B01CDB /* OFAppDataModel.h */,
+				03C9BCD112C9531700B01CDB /* OFAppDataModel.m */,
+				032E1FF712C7431D009C7FF8 /* DataModel.h */,
+				032E1FF812C7431D009C7FF8 /* DataModel.m */,
+				031BA5F812C5E60100D0609C /* ValueObjects */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03C9BD1F12C980C000B01CDB /* Models */,
+				03435D7512C5F1CD00A51A05 /* AppDelegate.h */,
+				03435D7612C5F1CD00A51A05 /* AppDelegate.m */,
+				031BA5FF12C5E60800D0609C /* ControlViews */,
+				037F3A3512C06DDD000E0383 /* OFAppViewController.h */,
+				037F3A3612C06DDD000E0383 /* OFAppViewController.m */,
+				035131BF12C07D8C00C700A2 /* PageDetailViewController.h */,
+				035131C012C07D8C00C700A2 /* PageDetailViewController.m */,
+				03837E4212C805B500D23358 /* ServersViewController.h */,
+				03837E4312C805B500D23358 /* ServersViewController.m */,
+				03837E4D12C81D4900D23358 /* ServerConfigViewController.h */,
+				03837E4E12C81D4900D23358 /* ServerConfigViewController.m */,
+				03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* SimpleGuiRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* SimpleGuiRemote_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* SimpleGuiRemote-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037F3A0912C06B9E000E0383 /* JSON */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				035B0D8012C99F1300FBF568 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* SimpleGuiRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleGuiRemote" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleGuiRemote;
+			productName = NativeAppNavBased;
+			productReference = 1D6058910D05DD3D006BFB54 /* SimpleGuiRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleGuiRemote" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* SimpleGuiRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				03837E5112C81D4900D23358 /* ServerConfigViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				037F3A1512C06B9E000E0383 /* NSObject+SBJSON.m in Sources */,
+				037F3A1612C06B9E000E0383 /* NSString+SBJSON.m in Sources */,
+				037F3A1712C06B9E000E0383 /* SBJsonBase.m in Sources */,
+				037F3A1812C06B9E000E0383 /* SBJsonParser.m in Sources */,
+				037F3A1912C06B9E000E0383 /* SBJsonWriter.m in Sources */,
+				037F3A3712C06DDD000E0383 /* OFAppViewController.m in Sources */,
+				035131C112C07D8C00C700A2 /* PageDetailViewController.m in Sources */,
+				031BA5FD12C5E60100D0609C /* ControlValueObject.m in Sources */,
+				031BA5FE12C5E60100D0609C /* PageValueObject.m in Sources */,
+				031BA60412C5E60800D0609C /* SliderView.m in Sources */,
+				031BA60512C5E60800D0609C /* ToggleView.m in Sources */,
+				03435D7712C5F1CD00A51A05 /* AppDelegate.m in Sources */,
+				032E1C1A12C6F319009C7FF8 /* ComboBoxView.m in Sources */,
+				032E1FF912C7431D009C7FF8 /* DataModel.m in Sources */,
+				03837E4412C805B500D23358 /* ServersViewController.m in Sources */,
+				03837E5012C81D4900D23358 /* ServerConfigViewController.m in Sources */,
+				03B48C3C12C843B20096FACE /* ServerConfigValueObject.m in Sources */,
+				03C9BCD212C9531700B01CDB /* OFAppDataModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleGuiRemote_Prefix.pch;
+				INFOPLIST_FILE = "SimpleGuiRemote-Info.plist";
+				PRODUCT_NAME = SimpleGuiRemote;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleGuiRemote_Prefix.pch;
+				INFOPLIST_FILE = "SimpleGuiRemote-Info.plist";
+				PRODUCT_NAME = SimpleGuiRemote;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleGuiRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleGuiRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
