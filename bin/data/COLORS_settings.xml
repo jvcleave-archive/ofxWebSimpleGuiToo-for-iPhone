@@ -1,22 +1,18 @@
 <controls>
-    <Toggle_useColorPicker>
-        <name>useColorPicker</name>
-        <value>0</value>
-    </Toggle_useColorPicker>
     <SliderInt_red>
         <name>red</name>
-        <value>205</value>
+        <value>188</value>
     </SliderInt_red>
     <SliderInt_green>
         <name>green</name>
-        <value>50</value>
+        <value>182</value>
     </SliderInt_green>
     <SliderInt_blue>
         <name>blue</name>
-        <value>94</value>
+        <value>219</value>
     </SliderInt_blue>
     <ComboBox_Options>
         <name>Options</name>
-        <value>3</value>
+        <value>2</value>
     </ComboBox_Options>
 </controls>

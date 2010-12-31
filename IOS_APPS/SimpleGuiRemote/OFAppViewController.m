@@ -167,7 +167,7 @@
 	
 	NSLog(@"OFAppViewController dealloc - may crash here if removing pagesArray");
 	//[pagesArray release];
-	[data release];
+	//[data release];
 	NSLog(@"OFAppViewController dealloc");
 	//[model release];
 	

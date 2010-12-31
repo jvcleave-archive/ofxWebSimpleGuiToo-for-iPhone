@@ -334,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0354DF9A12CD872F00353994</string>
+										<string>0330514012CDB27100CE0A6C</string>
 										<key>history</key>
 										<array>
 											<string>03435E8C12C683EE00A51A05</string>
@@ -356,7 +356,7 @@
 											<string>03F2E7B612CC6E4E00E318CC</string>
 											<string>03F2E7B712CC6E4E00E318CC</string>
 											<string>03F2E7B812CC6E4E00E318CC</string>
-											<string>0354DF5312CD83D600353994</string>
+											<string>0354DF9A12CD872F00353994</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -414,9 +414,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0354DF9112CD872F00353994</string>
+				<string>0330514112CDB27100CE0A6C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>0354DF9212CD872F00353994</string>
+				<string>0330514212CDB27100CE0A6C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -554,9 +554,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0330514B12CDB27100CE0A6C</string>
+		<string>0330514C12CDB27100CE0A6C</string>
+		<string>0330514D12CDB27100CE0A6C</string>
 		<string>03AF069A12AB8D7B00F4E39E</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Volumes/WORK_IN_PROGRESS/EXPERIMENTAL/OPENFRAMEWORKS/openframeworks_git/apps/jvcApps/ofxWebSimpleGuiToo-for-iPhone/ofxWebSimpleGuiTooExample.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 423 2560 1004 0 0 2560 1578 </string>
@@ -636,7 +640,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>03AF069A12AB8D7B00F4E39E</string>
-				<string>0354DF9312CD872F00353994</string>
+				<string>0330514312CDB27100CE0A6C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -758,13 +762,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>0354DF9412CD872F00353994</string>
+				<string>0330514412CDB27100CE0A6C</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>0354DF9512CD872F00353994</string>
-				<string>0354DF9612CD872F00353994</string>
-				<string>0354DF9712CD872F00353994</string>
-				<string>0354DF9812CD872F00353994</string>
-				<string>0354DF9912CD872F00353994</string>
+				<string>0330514512CDB27100CE0A6C</string>
+				<string>0330514612CDB27100CE0A6C</string>
+				<string>0330514712CDB27100CE0A6C</string>
+				<string>0330514812CDB27100CE0A6C</string>
+				<string>0330514912CDB27100CE0A6C</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -920,7 +924,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>03F2E59A12CC507600E318CC</string>
+				<string>0330514A12CDB27100CE0A6C</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

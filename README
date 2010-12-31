@@ -1,12 +1,8 @@
 ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/SimpleGuiRemote
-
 iPhone native app that connects to ofxWebSimpleGuiToo and generates controls using UIKit's UISlider, UISwitch and UiPicker
 
-
 ofxWebSimpleGuiToo-for-iPhone/ofxWebSimpleGuiTooExample.xcodeproj
-
 Openframeworks test project - based off Marek's original ofxWebSimpleGuiToo example (http://code.google.com/p/ofxmarek/downloads/list)
-
 
 ofxWebSimpleGuiToo-for-iPhone/addons/ofxSimpleGuiToo
 slightly modified version of Memo's ofxSimpleGuiToo (https://github.com/memo/msalibs) to allow grabbing of controls from ComboBox
@@ -14,6 +10,5 @@ slightly modified version of Memo's ofxSimpleGuiToo (https://github.com/memo/msa
 
 ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/PhoneGapApp/SimpleGuiApp
 requires PhoneGap (http://www.phonegap.com/)
-
 
 Good for testing the browser version of ofxWebSimpleGuiToo in the iPhone simulator. Also allows some special functionality that web apps only get when added to Home Screen via bookmarking

@@ -5,14 +5,14 @@
     </Toggle_Fill>
     <Toggle_Circle>
         <name>Circle</name>
-        <value>0</value>
+        <value>1</value>
     </Toggle_Circle>
     <SliderFloat_sizeX>
         <name>sizeX</name>
-        <value>308.268494</value>
+        <value>471.692596</value>
     </SliderFloat_sizeX>
     <SliderFloat_sizeY>
         <name>sizeY</name>
-        <value>183.754868</value>
+        <value>494.066162</value>
     </SliderFloat_sizeY>
 </controls>

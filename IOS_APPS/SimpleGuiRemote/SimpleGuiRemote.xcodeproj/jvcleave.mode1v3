@@ -197,89 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>03F2E60B12CC5B2D00E318CC</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ServersViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>03F2E60C12CC5B2D00E318CC</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ServersViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0330512A12CDAB2200CE0A6C</string>
-						<key>history</key>
-						<array>
-							<string>03F2E87E12CC782000E318CC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1680, 953}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>2560 56 1680 994 2560 0 1680 1050 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>03F2E60F12CC5B2D00E318CC</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ControlValueObject.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>03F2E61012CC5B2D00E318CC</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ControlValueObject.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0330512B12CDAB2200CE0A6C</string>
-						<key>history</key>
-						<array>
-							<string>03F2E61112CC5B2D00E318CC</string>
-							<string>03F2E87F12CC782000E318CC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1680, 953}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>2560 56 1680 994 2560 0 1680 1050 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -350,6 +268,7 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>03C9BD1F12C980C000B01CDB</string>
+								<string>031BA5FF12C5E60800D0609C</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
@@ -361,8 +280,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>2</integer>
+									<integer>12</integer>
+									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -405,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>OFAppViewController.m</string>
+								<string>SliderView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -413,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>OFAppViewController.m</string>
+										<string>SliderView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0330512712CDAB2200CE0A6C</string>
+										<string>0330516C12CDB3F500CE0A6C</string>
 										<key>history</key>
 										<array>
 											<string>035131AD12C07D0200C700A2</string>
@@ -459,29 +378,29 @@
 											<string>03C9BD7012C98D1200B01CDB</string>
 											<string>035B0D7112C99E6200FBF568</string>
 											<string>035B0DBE12C9A77000FBF568</string>
-											<string>035B0DC012C9A77000FBF568</string>
 											<string>035B0DD212C9A8E200FBF568</string>
 											<string>035B0DD412C9A8E200FBF568</string>
 											<string>0332DB5212CAF53700BF5164</string>
 											<string>0332DB5412CAF53700BF5164</string>
-											<string>0332DBA312CAF7B200BF5164</string>
 											<string>0332DBA712CAF7B200BF5164</string>
 											<string>0332DC0712CAF97A00BF5164</string>
 											<string>0332DC3912CAFA5600BF5164</string>
 											<string>0332DC4C12CAFB9D00BF5164</string>
 											<string>0332DC4D12CAFB9D00BF5164</string>
-											<string>03F2E87A12CC782000E318CC</string>
-											<string>03F2E87B12CC782000E318CC</string>
 											<string>03F2E87C12CC782000E318CC</string>
 											<string>0330511D12CDAB2200CE0A6C</string>
 											<string>0330511E12CDAB2200CE0A6C</string>
 											<string>0330511F12CDAB2200CE0A6C</string>
 											<string>0330512012CDAB2200CE0A6C</string>
-											<string>0330512112CDAB2200CE0A6C</string>
 											<string>0330512212CDAB2200CE0A6C</string>
 											<string>0330512412CDAB2200CE0A6C</string>
 											<string>0330512512CDAB2200CE0A6C</string>
-											<string>0330512612CDAB2200CE0A6C</string>
+											<string>0330515C12CDB3B100CE0A6C</string>
+											<string>0330515D12CDB3B100CE0A6C</string>
+											<string>0330515E12CDB3B100CE0A6C</string>
+											<string>0330515F12CDB3B100CE0A6C</string>
+											<string>0330516A12CDB3F500CE0A6C</string>
+											<string>0330516B12CDB3F500CE0A6C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -679,15 +598,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0330512C12CDAB2200CE0A6C</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>0330512D12CDAB2200CE0A6C</string>
 		<string>0330512E12CDAB2200CE0A6C</string>
 		<string>037F3A9A12C07685000E0383</string>
-		<string>03F2E60F12CC5B2D00E318CC</string>
-		<string>03F2E60B12CC5B2D00E318CC</string>
-		<string>/Volumes/WORK_IN_PROGRESS/EXPERIMENTAL/OPENFRAMEWORKS/openframeworks_git/apps/jvcApps/ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/SimpleGuiRemote/SimpleGuiRemote.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>/Volumes/WORK_IN_PROGRESS/EXPERIMENTAL/OPENFRAMEWORKS/openframeworks_git/apps/jvcApps/ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/SimpleGuiRemote/SimpleGuiRemote.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 89 2560 1489 0 0 2560 1578 </string>
@@ -924,14 +841,12 @@
 							<key>Dock</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ControlValueObject.h</string>
+										<string>PageDetailViewController.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -952,6 +867,8 @@
 							<string>574pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -987,8 +904,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>03C9BD1112C9590200B01CDB</string>
-				<string>03C9BD1212C9590200B01CDB</string>
+				<string>0330515812CDB39A00CE0A6C</string>
+				<string>0330515912CDB39A00CE0A6C</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -997,7 +914,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
