@@ -6,6 +6,11 @@ A native iPhone application based of off Marek Bereza's (http://www.mrkbrz.com/)
 
 Using the version of ofxWebSimpleGuiToo included you can control parameters via the iPhone. The app current supports ofxSimpleGuiSliderInt, ofxSimpleGuiSliderFloat and ofxSimpleGuiToggle and ofxSimpleGuiComboBox
 
+To test:
+1. Run the ofxWebSimpleGuiTooExample.xcodeproj from the OF examples folder
+2. Open ofxWebSimpleGuiToo-for-iPhone/IOS_APPS/SimpleGuiRemote/SimpleGuiRemote.xcodeproj and Build and Run 
+3. Add a Server via the + button (default port for the app is 8910) and connect
+
 
 Built using the latest openframeworks from github
 https://github.com/openframeworks/openFrameworks
@@ -36,4 +41,4 @@ TODO/WISHLIST
 - Add mouse input (TUIO?)
 - clean up code (it doesn't leak according to my testing but data could be handled more elegantly)
 - QR code generation by OF app of IP:PORT info
--Better layout support for iPad
+- Better layout support for iPad
