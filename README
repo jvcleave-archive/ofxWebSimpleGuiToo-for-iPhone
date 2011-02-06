@@ -16,10 +16,10 @@ To test:
 3. Add a Server via the + button (default port for the app is 8910) and connect
 
 
-Built using the latest openframeworks from github
+Built using the pre-007 openframeworks from github
 https://github.com/openframeworks/openFrameworks
 
-Will likely work with openFrameworks 0062 but you will have to find replace ofSetHexColor with ofSetColor
+Will likely work with openFrameworks 0062 but you will have to find replace ofSetHexColor with ofSetColor. Untested with 007
 
 FILES:
 
