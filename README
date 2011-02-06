@@ -1,5 +1,9 @@
 DEMO:
+Interface in Simulator
 http://www.vimeo.com/18167578
+
+Tuio Implementation (thanks to TuioPad) http://code.google.com/p/tuiopad/
+http://www.vimeo.com/19617650
 
 Overview:
 A native iPhone application based of off Marek Bereza's (http://www.mrkbrz.com/) browser based interface to ofxSimpleGuiToo (http://memo.tv/node/875). 
@@ -38,7 +42,6 @@ Good for testing the browser version of ofxWebSimpleGuiToo in the iPhone simulat
 TODO/WISHLIST
 
 - Fix Auto-Save Toggle
-- Add mouse input (TUIO?)
 - clean up code (it doesn't leak according to my testing but data could be handled more elegantly)
 - QR code generation by OF app of IP:PORT info
 - Better layout support for iPad
