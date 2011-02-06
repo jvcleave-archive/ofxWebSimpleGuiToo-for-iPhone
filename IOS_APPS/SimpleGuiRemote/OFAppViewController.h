@@ -13,10 +13,12 @@
 	NSMutableArray *pagesArray;
 	NSDictionary *data;
 	OFAppDataModel *model;
+	
 }
 
 @property (nonatomic, retain) NSMutableArray *pagesArray;
 @property (nonatomic, retain) NSDictionary *data;
 @property (nonatomic, retain) OFAppDataModel *model;
+-(void) onTUIOButtonTap:(id)sender;
 
 @end

@@ -13,13 +13,16 @@
 #include <netdb.h>
 
 
-void ipLongToString(long ipLong, char *ipString) {
-	unsigned short a, b, c, d;
-	a = (ipLong & (0xff << 24)) >> 24;
-	b = (ipLong & (0xff << 16)) >> 16;
-	c = (ipLong & (0xff << 8)) >> 8;
-	d = ipLong & 0xff;
-	sprintf(ipString, "%hu.%hu.%hu.%hu", a, b, c, d);
+void ipLongToString(unsigned int ip, char *ipString) {
+	unsigned int a, bb, c, d;
+	a = ip/16777216;
+    ip = ip%16777216;
+    bb = ip/65536;
+    ip = ip%65536;
+    c = ip/256;
+    ip = ip%256;
+	d = ip;
+	sprintf(ipString, "%i.%i.%i.%i", a, bb, c, d);
 }
 
 // callback from server
@@ -27,13 +30,21 @@ void webserverCallback(struct mg_connection *conn,
 					   const struct mg_request_info *info, 
 					   void *user_data) {
 	
+	in_addr_t addr = info->remote_ip; 
+	const char *buf = addr2ascii(AF_INET, &addr, sizeof(addr), NULL);
+	cout << "buf: " << buf << endl;
 	
-	//char ipAddress[4*3+2];
-	//ipLongToString(info->remote_ip, ipAddress);
+	char *ipString = new char[sizeof(info->remote_ip)];
+	unsigned int ip = info->remote_ip;
+	ipLongToString(ip, ipString); 
+
+	
+	cout << "ipString: " << ipString << endl;
+	
 	string query = "";
 	if(info->query_string!=NULL) query = info->query_string;
 		
-	((ofxWSRequestHandler*)user_data)->setConnection(conn, "", query);
+	((ofxWSRequestHandler*)user_data)->setConnection(conn, ipString, query);
 	
 	if(strcmp(info->request_method,"GET")==0 || strcmp(info->request_method,"get")) {
 		((ofxWSRequestHandler*)user_data)->httpGet(info->uri);

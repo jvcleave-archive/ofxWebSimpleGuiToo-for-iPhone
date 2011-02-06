@@ -33,7 +33,16 @@ void testApp::setup(){
 	box2 = 2;
 	gui.setPage(1);
 	gui.startServer();
+	tuioClient.connect(3333);
+	tuioClient.setVerbose(true);
 	
+	
+	//Assign Global TUIO Callback Functions
+	//ofAddListener(ofEvents.touchDown,this,&testApp::touchDown);
+	ofAddListener(tuioClient.cursorAdded, this, &testApp::touchDown);
+	//ofAddListener(tuioClient.cursorUpdated,this,&testApp::touchUp);
+	ofAddListener(tuioClient.cursorUpdated, this,&testApp::touchMoved);
+	ofAddListener(tuioClient.cursorUpdated, this, &testApp::cursorUpdateHandler);
 }
 
 //--------------------------------------------------------------
@@ -58,7 +67,29 @@ void testApp::draw(){
 	} else {
 		ofRect((ofGetWidth()-sizeX)/2, (ofGetHeight()-sizeY)/2, sizeX, sizeY);
 	}
+	
+	tuioClient.drawCursors();
+	tuioClient.drawObjects();
+	ofPushStyle();
+		//ofSetColor(ofRandom(0, 255), ofRandom(0, 255), ofRandom(0, 255));
+		ofSetColor(0xFF5566ee);
+		ofBeginShape();
+		ofNoFill();
+		//ofSetPolyMode(OF_POLY_WINDING_NONZERO);
+		
+		for(int i=0; i<touchPoints.size(); i++)
+		{
+			ofVertex(touchPoints[i].x, touchPoints[i].y);
+		}
+		ofEndShape();
+	ofPopStyle();
+	string info = "";
+	info = "FPS: " + ofToString(ofGetFrameRate(), 2) + "\n";
+	info.append("numPoints " + ofToString(touchPoints.size(), 0));
+	ofDrawBitmapString(info, 20, 20);
+	
 	gui.draw();
+	
 }
 
 //--------------------------------------------------------------
@@ -90,4 +121,39 @@ void testApp::mousePressed(int x, int y, int button){
 //--------------------------------------------------------------
 void testApp::mouseReleased(){
 
+}
+void testApp::exit()
+{
+	tuioClient.disconnect();
+}
+void testApp::cursorUpdateHandler(TuioCursor & tcur)
+{
+	/*std::cout << "cursorUpdated " << tcur->getCursorID() << " (" <<  tcur->getSessionID() << ") " << tcur->getX() << " " << tcur->getY() 
+	 << " " << tcur->getMotionSpeed() << " " << tcur->getMotionAccel() << " " << std::endl;*/
+	
+	cout << "testApp::cursorUpdateHandler: " << " tcur.getX(): " << tcur.getX() << " tcur.getY(): " << tcur.getY() << endl;
+	
+	touchPoints.push_back(ofPoint(tcur.getX()*ofGetWidth(), tcur.getY()*ofGetHeight()));
+	//touchPoints.push_back( ofPoint(tcur.getX(), tcur.getY()) );
+	//cout << "tcur.getX(): " << tcur.getX() << " tcur.getY() : " << tcur.getY() << endl;
+}
+
+void testApp::touchDown(TuioCursor & tcur)
+{
+
+	cout << "testApp::touchDown" << endl;
+	touchPoints.push_back( ofPoint(tcur.getX()*ofGetWidth(), tcur.getY()*ofGetHeight()) );
+	
+}
+
+void testApp::touchUp(TuioCursor & tcur)
+{
+	cout << " testApp::touchUp:touch.id " << endl;
+	//touchPoints.push_back( ofPoint(tcur.getX()*ofGetWidth(), tcur.getY()*ofGetHeight()) );
+
+}
+
+void testApp::touchMoved(TuioCursor & tcur){
+	touchPoints.push_back( ofPoint(tcur.getX()*ofGetWidth(), tcur.getY()*ofGetHeight()) );
+	
 }

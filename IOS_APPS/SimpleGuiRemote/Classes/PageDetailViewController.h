@@ -12,7 +12,11 @@
 @interface PageDetailViewController : UIViewController {
 	PageValueObject *pageData;
 	UIScrollView *contentView;
+	NSString *host;
 }
 @property (nonatomic, retain) PageValueObject *pageData;
 @property (nonatomic, retain) UIScrollView *contentView;
+-(void) onTUIOButtonTap:(id)sender;
+@property (nonatomic, copy) NSString *host;
+
 @end

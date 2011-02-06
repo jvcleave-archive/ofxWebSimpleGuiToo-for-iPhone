@@ -1,0 +1,66 @@
+// !$*UTF8*$!
+{
+	344E333612E5D049003F4B8C /* ofxWebSimpleGuiTooExample */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ofxWebSimpleGuiTooExample;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	344E335B12E5D069003F4B8C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	344E335C12E5D069003F4B8C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 344E333612E5D049003F4B8C /* ofxWebSimpleGuiTooExample */;
+		activeTarget = E4B69B5A0A3A1756003C02F2 /* ofxWebSimpleGuiTooExample */;
+		codeSenseManager = 344E335C12E5D069003F4B8C /* Code sense */;
+		executables = (
+			344E333612E5D049003F4B8C /* ofxWebSimpleGuiTooExample */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 317228898;
+			PBXWorkspaceStateSaveDate = 317228898;
+		};
+		sourceControlManager = 344E335B12E5D069003F4B8C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E4B69B5A0A3A1756003C02F2 /* ofxWebSimpleGuiTooExample */ = {
+		activeExec = 0;
+		executables = (
+			344E333612E5D049003F4B8C /* ofxWebSimpleGuiTooExample */,
+		);
+	};
+}

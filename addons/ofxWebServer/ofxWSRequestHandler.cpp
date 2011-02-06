@@ -25,6 +25,7 @@ void ofxWSRequestHandler::httpResponseData(char *data, int length) {
  * Returns the client's ip address
  */
 string ofxWSRequestHandler::getIPAddress() {
+	cout << "ofxWSRequestHandler::getIPAddress" << ipAddress << endl;
 	return ipAddress;
 }
 

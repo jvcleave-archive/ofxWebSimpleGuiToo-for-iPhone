@@ -23,6 +23,7 @@
 	viewController.serversArray = dataModel.savedServers;
 	
 	navigationController = [[UINavigationController alloc] initWithRootViewController: viewController]; 
+	navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
 	[self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;

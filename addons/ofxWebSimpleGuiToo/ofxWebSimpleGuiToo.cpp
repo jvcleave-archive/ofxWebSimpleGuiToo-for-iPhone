@@ -22,6 +22,7 @@ void ofxWebSimpleGuiToo::stopServer(){
 }
 void ofxWebSimpleGuiToo::httpGet(string url) {
 	
+	cout << "ofxWebSimpleGuiToo::httpGet getIPAddress()" << getIPAddress() << endl;
 	string key = getRequestParameter("key");
 	if(key=="") {
 		string guiDesc = "[";

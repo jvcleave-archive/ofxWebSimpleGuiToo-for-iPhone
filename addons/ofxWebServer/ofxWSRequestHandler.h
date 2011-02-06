@@ -55,5 +55,8 @@ private:
 	string query;
 public:
 	// internal workings, please ignore.
-	void setConnection(struct mg_connection *_conn, string ip, string q) {conn = _conn; ipAddress = ip; query = q;}
+	void setConnection(struct mg_connection *_conn, string ip, string q) {
+		conn = _conn; ipAddress = ip; query = q;
+		cout << "setConnection" <<endl;
+	}
 };

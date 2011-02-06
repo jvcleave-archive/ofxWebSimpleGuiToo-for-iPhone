@@ -11,7 +11,7 @@
 
 @interface ServerConfigViewController : UIViewController {
 
-	 UITextField *nameField;
+	UITextField *nameField;
     UITextField *addressField;
     
     UITextField *portField;
