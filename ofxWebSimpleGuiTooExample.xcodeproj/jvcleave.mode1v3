@@ -338,7 +338,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0366B4F012FBE17B00AF1421</string>
+										<string>036A9F8E12FE9CD200BFD7F1</string>
 										<key>history</key>
 										<array>
 											<string>03435E8D12C683EE00A51A05</string>
@@ -384,7 +384,7 @@
 											<string>0348314C12E6C2440083D111</string>
 											<string>0320A0CC12E80B5A0000DCA7</string>
 											<string>0367B05312E9364B000F87D4</string>
-											<string>035623ED12EFE101009B73D5</string>
+											<string>0366B4F012FBE17B00AF1421</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -442,9 +442,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0366B4F112FBE17B00AF1421</string>
+				<string>036A9F8F12FE9CD200BFD7F1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>0366B4F212FBE17B00AF1421</string>
+				<string>036A9F9012FE9CD200BFD7F1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -582,9 +582,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>036A9F9912FE9CD200BFD7F1</string>
+		<string>036A9F9A12FE9CD200BFD7F1</string>
 		<string>03AF069A12AB8D7B00F4E39E</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Volumes/WORK_IN_PROGRESS/EXPERIMENTAL/OPENFRAMEWORKS/openframeworks_git/apps/jvcApps/ofxWebSimpleGuiTooExample (trunk)/ofxWebSimpleGuiTooExample.xcodeproj</string>
+		<string>/Volumes/WORK_IN_PROGRESS/EXPERIMENTAL/OPENFRAMEWORKS/openframeworks_git/apps/TO_GITHUB/ofxWebSimpleGuiToo-for-iPhone/ofxWebSimpleGuiTooExample.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>2560 46 1680 1004 2560 0 1680 1050 </string>
@@ -664,7 +667,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>03AF069A12AB8D7B00F4E39E</string>
-				<string>0366B4F312FBE17B00AF1421</string>
+				<string>036A9F9112FE9CD200BFD7F1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -760,10 +763,10 @@
 									<key>Frame</key>
 									<string>{{766, 0}, {914, 513}}</string>
 									<key>RubberWindowFrame</key>
-									<string>2560 47 1680 1003 2560 0 1680 1050 </string>
+									<string>2576 26 1680 1003 2560 0 1680 1050 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>2560 47 1680 1003 2560 0 1680 1050 </string>
+								<string>2576 26 1680 1003 2560 0 1680 1050 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -786,18 +789,18 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>0366B4F412FBE17B00AF1421</string>
+				<string>036A9F9212FE9CD200BFD7F1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>0366B4F512FBE17B00AF1421</string>
-				<string>0366B4F612FBE17B00AF1421</string>
-				<string>0366B4F712FBE17B00AF1421</string>
-				<string>0366B4F812FBE17B00AF1421</string>
-				<string>0366B4F912FBE17B00AF1421</string>
+				<string>036A9F9312FE9CD200BFD7F1</string>
+				<string>036A9F9412FE9CD200BFD7F1</string>
+				<string>036A9F9512FE9CD200BFD7F1</string>
+				<string>036A9F9612FE9CD200BFD7F1</string>
+				<string>036A9F9712FE9CD200BFD7F1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>2560 47 1680 1003 2560 0 1680 1050 </string>
+			<string>2576 26 1680 1003 2560 0 1680 1050 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
@@ -948,7 +951,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>035623DF12EEBE2E009B73D5</string>
+				<string>036A9F9812FE9CD200BFD7F1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

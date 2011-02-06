@@ -46,8 +46,6 @@
 		033F2EAB12D1855600D2B3AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033F2E9112D1855600D2B3AE /* CoreLocation.framework */; };
 		033F2EAC12D1855600D2B3AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033F2E9212D1855600D2B3AE /* SystemConfiguration.framework */; };
 		03435D7712C5F1CD00A51A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03435D7612C5F1CD00A51A05 /* AppDelegate.m */; };
-		0349EE9512D182D4001B582C /* TuioPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349EE9312D182D4001B582C /* TuioPad.xib */; };
-		0349EE9612D182D4001B582C /* TuioPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0349EE9412D182D4001B582C /* TuioPhone.xib */; };
 		035623B512EEBCC6009B73D5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 035623B312EEBCC6009B73D5 /* Icon.png */; };
 		035623B612EEBCC6009B73D5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 035623B412EEBCC6009B73D5 /* Icon@2x.png */; };
 		035B0D8112C99F1300FBF568 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035B0D8012C99F1300FBF568 /* QuartzCore.framework */; };
@@ -147,14 +145,12 @@
 		033F2E9212D1855600D2B3AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		03435D7512C5F1CD00A51A05 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03435D7612C5F1CD00A51A05 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0349EE9312D182D4001B582C /* TuioPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TuioPad.xib; sourceTree = "<group>"; };
-		0349EE9412D182D4001B582C /* TuioPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TuioPhone.xib; sourceTree = "<group>"; };
 		035131BF12C07D8C00C700A2 /* PageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageDetailViewController.h; sourceTree = "<group>"; };
 		035623B312EEBCC6009B73D5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		035623B412EEBCC6009B73D5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		035B0D8012C99F1300FBF568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0367AFAE12E820B3000F87D4 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = Classes/Shape.h; sourceTree = SOURCE_ROOT; };
-		0367AFAF12E820B3000F87D4 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shape.m; path = Classes/Shape.m; sourceTree = SOURCE_ROOT; };
+		0367AFAE12E820B3000F87D4 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		0367AFAF12E820B3000F87D4 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		037F3A0A12C06B9E000E0383 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		037F3A0B12C06B9E000E0383 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		037F3A0C12C06B9E000E0383 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -168,12 +164,12 @@
 		037F3A1412C06B9E000E0383 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		037F3A3512C06DDD000E0383 /* OFAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFAppViewController.h; path = ../OFAppViewController.h; sourceTree = "<group>"; };
 		037F3A3612C06DDD000E0383 /* OFAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OFAppViewController.mm; path = ../OFAppViewController.mm; sourceTree = "<group>"; };
-		038027E612E95FFF003ABC0F /* PageDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PageDetailViewController.mm; path = Classes/PageDetailViewController.mm; sourceTree = SOURCE_ROOT; };
+		038027E612E95FFF003ABC0F /* PageDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PageDetailViewController.mm; sourceTree = "<group>"; };
 		03837E4212C805B500D23358 /* ServersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServersViewController.h; sourceTree = "<group>"; };
 		03837E4312C805B500D23358 /* ServersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServersViewController.m; sourceTree = "<group>"; };
 		03837E4D12C81D4900D23358 /* ServerConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfigViewController.h; sourceTree = "<group>"; };
 		03837E4E12C81D4900D23358 /* ServerConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConfigViewController.m; sourceTree = "<group>"; };
-		03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerConfigViewController.xib; sourceTree = "<group>"; };
+		03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServerConfigViewController.xib; path = Classes/ServerConfigViewController.xib; sourceTree = "<group>"; };
 		03B48C3A12C843B20096FACE /* ServerConfigValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfigValueObject.h; sourceTree = "<group>"; };
 		03B48C3B12C843B20096FACE /* ServerConfigValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConfigValueObject.m; sourceTree = "<group>"; };
 		03C9BCD012C9531700B01CDB /* OFAppDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFAppDataModel.h; sourceTree = "<group>"; };
@@ -214,6 +210,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0307C24412FF303F003AA71B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				037F3A3512C06DDD000E0383 /* OFAppViewController.h */,
+				037F3A3612C06DDD000E0383 /* OFAppViewController.mm */,
+				035131BF12C07D8C00C700A2 /* PageDetailViewController.h */,
+				038027E612E95FFF003ABC0F /* PageDetailViewController.mm */,
+				03837E4212C805B500D23358 /* ServersViewController.h */,
+				03837E4312C805B500D23358 /* ServersViewController.m */,
+				03837E4D12C81D4900D23358 /* ServerConfigViewController.h */,
+				03837E4E12C81D4900D23358 /* ServerConfigViewController.m */,
+				0332970A12E548D400D8C479 /* TuioViewController.h */,
+				0332970B12E548D400D8C479 /* TuioViewController.mm */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0307C24512FF307A003AA71B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				031BA5FF12C5E60800D0609C /* ControlViews */,
+				0367AFAE12E820B3000F87D4 /* Shape.h */,
+				0367AFAF12E820B3000F87D4 /* Shape.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		031BA5F812C5E60100D0609C /* ValueObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,15 +263,6 @@
 			path = ControlViews;
 			sourceTree = "<group>";
 		};
-		033296B512E5486600D8C479 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				033296B612E5486600D8C479 /* oscpack */,
-				033296CE12E5486600D8C479 /* TUIO */,
-			);
-			path = src;
-			sourceTree = SOURCE_ROOT;
-		};
 		033296B612E5486600D8C479 /* oscpack */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +271,7 @@
 			);
 			name = oscpack;
 			path = src/oscpack;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		033296B712E5486600D8C479 /* ip */ = {
 			isa = PBXGroup;
@@ -336,11 +350,13 @@
 			);
 			name = TUIO;
 			path = src/TUIO;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		033F2E2E12D1855600D2B3AE /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				033296CE12E5486600D8C479 /* TUIO */,
+				033296B612E5486600D8C479 /* oscpack */,
 				033F2E2F12D1855600D2B3AE /* core */,
 			);
 			name = libs;
@@ -405,25 +421,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0367AFAE12E820B3000F87D4 /* Shape.h */,
-				0367AFAF12E820B3000F87D4 /* Shape.m */,
+				0307C24512FF307A003AA71B /* Views */,
+				0307C24412FF303F003AA71B /* Controllers */,
 				0332979B12E54FB900D8C479 /* MSATuioSenderCPP.h */,
 				0332979C12E54FB900D8C479 /* MSATuioSenderCPP.mm */,
 				03C9BD1F12C980C000B01CDB /* Models */,
 				03435D7512C5F1CD00A51A05 /* AppDelegate.h */,
 				03435D7612C5F1CD00A51A05 /* AppDelegate.m */,
-				031BA5FF12C5E60800D0609C /* ControlViews */,
-				037F3A3512C06DDD000E0383 /* OFAppViewController.h */,
-				037F3A3612C06DDD000E0383 /* OFAppViewController.mm */,
-				035131BF12C07D8C00C700A2 /* PageDetailViewController.h */,
-				038027E612E95FFF003ABC0F /* PageDetailViewController.mm */,
-				03837E4212C805B500D23358 /* ServersViewController.h */,
-				03837E4312C805B500D23358 /* ServersViewController.m */,
-				03837E4D12C81D4900D23358 /* ServerConfigViewController.h */,
-				03837E4E12C81D4900D23358 /* ServerConfigViewController.m */,
-				03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */,
-				0332970A12E548D400D8C479 /* TuioViewController.h */,
-				0332970B12E548D400D8C479 /* TuioViewController.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -439,7 +443,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				033296B512E5486600D8C479 /* src */,
 				033F2E2E12D1855600D2B3AE /* libs */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -463,10 +466,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03837E4F12C81D4900D23358 /* ServerConfigViewController.xib */,
 				035623B312EEBCC6009B73D5 /* Icon.png */,
 				035623B412EEBCC6009B73D5 /* Icon@2x.png */,
-				0349EE9312D182D4001B582C /* TuioPad.xib */,
-				0349EE9412D182D4001B582C /* TuioPhone.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* SimpleGuiRemote-Info.plist */,
 			);
@@ -537,8 +539,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				03837E5112C81D4900D23358 /* ServerConfigViewController.xib in Resources */,
-				0349EE9512D182D4001B582C /* TuioPad.xib in Resources */,
-				0349EE9612D182D4001B582C /* TuioPhone.xib in Resources */,
 				035623B512EEBCC6009B73D5 /* Icon.png in Resources */,
 				035623B612EEBCC6009B73D5 /* Icon@2x.png in Resources */,
 			);
